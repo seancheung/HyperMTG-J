@@ -7,6 +7,7 @@ package com.mtg.core.common;
  * @author Sean
  *
  */
-public class Color {
+public enum Color {
 
+	Red, Blue, Green, Black, White, Colorless
 }

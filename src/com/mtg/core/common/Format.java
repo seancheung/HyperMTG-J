@@ -7,6 +7,7 @@ package com.mtg.core.common;
  * @author Sean
  *
  */
-public class Format {
+public enum Format {
 
+	Default, Standard, Modern, Extended, Block, Vintage, Legacy, Classic, Commander
 }

@@ -7,6 +7,7 @@ package com.mtg.core.common;
  * @author Sean
  *
  */
-public class Rarity {
+public enum Rarity {
 
+	Common, Uncommon, Rare, Mythic
 }

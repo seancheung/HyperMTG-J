@@ -7,6 +7,7 @@ package com.mtg.core.common;
  * @author Sean
  *
  */
-public class Mode {
+public enum Mode {
 
+	Default, Constructed, Block, Sealed, Draft
 }
