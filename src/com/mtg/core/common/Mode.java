@@ -9,5 +9,5 @@ package com.mtg.core.common;
  */
 public enum Mode {
 
-	Default, Constructed, Block, Sealed, Draft
+	Default, Constructed, Block, Sealed, Draft;
 }

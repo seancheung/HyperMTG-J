@@ -17,24 +17,24 @@ import com.mtg.core.common.Mode;
  */
 public class Deck {
 
-	public String Comment;
+	public String comment;
 
-	public String Name;
+	public String name;
 
-	public Format Format;
+	public Format format;
 
-	public Mode Mode;
+	public Mode mode;
 
-	public ObservableList<Card> MainBoard;
+	public ObservableList<Card> mainBoard;
 
-	public ObservableList<Card> SideBoard;
+	public ObservableList<Card> sideBoard;
 
 	public Deck() {
-		Name = "";
-		MainBoard = FXCollections.emptyObservableList();
-		SideBoard = FXCollections.emptyObservableList();
-		Comment = "";
-		Format = Format.Default;
-		Mode = Mode.Default;
+		name = "";
+		mainBoard = FXCollections.emptyObservableList();
+		sideBoard = FXCollections.emptyObservableList();
+		comment = "";
+		format = Format.Default;
+		mode = Mode.Default;
 	}
 }

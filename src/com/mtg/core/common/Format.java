@@ -9,5 +9,5 @@ package com.mtg.core.common;
  */
 public enum Format {
 
-	Default, Standard, Modern, Extended, Block, Vintage, Legacy, Classic, Commander
+	Default, Standard, Modern, Extended, Block, Vintage, Legacy, Classic, Commander;
 }
