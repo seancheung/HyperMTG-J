@@ -3,11 +3,15 @@
  */
 package com.mtg.core.base;
 
+import java.io.Serializable;
+
 /**
  * @author Sean
  *
  */
-public class Card {
+public class Card implements Serializable {
+
+	private static final long serialVersionUID = -5634550816497146831L;
 
 	public String ID;
 
