@@ -49,33 +49,82 @@
         </Menu>
       </menus>
     </MenuBar>
-    <SplitPane dividerPositions="0.22048997772828507, 0.48329621380846327, 0.7249443207126949" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <SplitPane dividerPositions="0.23496659242761692, 0.4376391982182628, 0.6458797327394209" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <items>
-        <AnchorPane>
+        <AnchorPane prefHeight="-1.0" prefWidth="-1.0">
           <children>
-            <TextField prefWidth="-1.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
-            <ListView disable="false" editable="false" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="25.0" />
-          </children>
-        </AnchorPane>
-        <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="557.0" prefWidth="216.0">
-          <children>
-            <SplitPane dividerPositions="" focusTraversable="true" orientation="VERTICAL" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <items>
-                <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
-                  <children>
-                    <TitledPane animated="false" prefHeight="555.0" prefWidth="228.0" text="无标题" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                      <content>
-                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                      </content>
-                    </TitledPane>
-                  </children>
-                </AnchorPane>
-              </items>
-            </SplitPane>
+            <Accordion prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <expandedPane>
+                <TitledPane fx:id="x1" animated="true" focusTraversable="false" text="Search">
+                  <content>
+                    <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+                      <children>
+                        <Label layoutY="58.0" text="Name:" AnchorPane.leftAnchor="2.0" />
+                        <TextField layoutY="55.0" prefWidth="-1.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="2.0" />
+                        <Label layoutY="103.0" text="Type:" AnchorPane.leftAnchor="2.0" />
+                        <TextField layoutY="100.0" prefWidth="-1.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </expandedPane>
+              <panes>
+                <fx:reference source="x1" />
+                <TitledPane animated="true" focusTraversable="false" text="Set">
+                  <content>
+                    <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane animated="true" focusTraversable="false" text="Type">
+                  <content>
+                    <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane animated="true" focusTraversable="false" text="Misc">
+                  <content>
+                    <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
           </children>
         </AnchorPane>
         <AnchorPane prefHeight="-1.0" prefWidth="-1.0" />
-        <AnchorPane />
+        <AnchorPane>
+          <children>
+            <TextField prefWidth="-1.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+            <ListView id="listViewAll" disable="false" editable="false" focusTraversable="false" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="25.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <Accordion prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <expandedPane>
+                <TitledPane fx:id="x2" animated="true" focusTraversable="false" text="Sideboard">
+                  <content>
+                    <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+                      <children>
+                        <ListView id="listViewSide" focusTraversable="false" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </expandedPane>
+              <panes>
+                <TitledPane animated="true" focusTraversable="false" text="Mainboard">
+                  <content>
+                    <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+                      <children>
+                        <ListView id="listViewMain" focusTraversable="false" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <fx:reference source="x2" />
+              </panes>
+            </Accordion>
+          </children>
+        </AnchorPane>
       </items>
     </SplitPane>
     <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">

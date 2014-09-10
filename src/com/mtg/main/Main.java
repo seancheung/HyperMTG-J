@@ -20,7 +20,7 @@ public class Main extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource(
 				"/com/mtg/resources/deckbuilder/deckbuilderview.fxml"));
 		primaryStage.setTitle("Kromalights Designer");
-		primaryStage.setScene(new Scene(root, 720, 640));
+		primaryStage.setScene(new Scene(root, 980, 640));
 		primaryStage.show();
 	}
 
